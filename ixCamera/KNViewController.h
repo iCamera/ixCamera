@@ -13,4 +13,6 @@
 @interface KNViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIView* viewCapturePreview;
 @property (strong, nonatomic) KNVideoCapture* capture;
+
+- (IBAction)mirror:(id)sender;
 @end

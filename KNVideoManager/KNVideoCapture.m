@@ -16,6 +16,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 
     AVCaptureDevicePosition devicePostion_;
     BOOL autoTorch_;
+    BOOL mirriring_;
     
     void(^captureCompletion)(UIImage* img);
 }
@@ -25,6 +26,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 @property (strong, nonatomic) UIView* viewPreview;
 @property NSInteger captureFrameRate;
 @property kKNCaptureResolution captureResolution;
+@property CATransform3D noMorrorTransform;
 
 - (AVCaptureSession *)session;
 - (AVCaptureDevice *)cameraPosition:(AVCaptureDevicePosition)position;
@@ -47,6 +49,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 @synthesize viewPreview         = _viewPreview;
 @synthesize captureFrameRate    = _captureFrameRate;
 @synthesize captureResolution   = _captureResolution;
+@synthesize noMorrorTransform   = _noMorrorTransform;
 
 - (id)init {
     self = [super init];
@@ -175,6 +178,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 
     if (_viewPreview) {
         AVCaptureVideoPreviewLayer* previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
+        self.noMorrorTransform = previewLayer.transform;
         previewLayer.frame = _viewPreview.bounds;
         previewLayer.videoGravity = AVLayerVideoGravityResize;
         [_viewPreview.layer addSublayer:previewLayer];
@@ -368,6 +372,19 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     
 }
 
+- (BOOL)isMirroring {
+    return  mirriring_;
+}
+
+- (void)setMirroring:(BOOL)mirror {
+    
+    if (mirriring_) {
+        self.previewLayer.transform = CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 0.0f);
+    } else {
+        self.previewLayer.transform = CATransform3DMakeRotation(M_PI, 0.0f, 1.0f, 0.0f);
+    }
+    mirriring_ = !mirriring_;
+}
 
 - (CGImageRef)imageFromSampleBuffer:(CMSampleBufferRef) sampleBuffer
 {

@@ -51,5 +51,7 @@ typedef enum {
 - (void)totchToggle;
 - (void)setAutoTorchMode:(BOOL)use;
 - (void)setTorchLevel:(float)level;
+- (BOOL)isMirroring;
+- (void)setMirroring:(BOOL)mirror;
 
 @end

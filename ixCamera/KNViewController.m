@@ -47,5 +47,11 @@
                   
                   
     }];
+    [_capture setMirroring:YES];
+}
+
+static BOOL mirror;
+- (IBAction)mirror:(id)sender {
+    [_capture setMirroring:!mirror];
 }
 @end

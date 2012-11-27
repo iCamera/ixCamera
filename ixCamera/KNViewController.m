@@ -8,6 +8,8 @@
 
 #import "KNViewController.h"
 #import "KNVideoCapture.h"
+#import "KNVideoWriter.h"
+#import "KNFileManager.h"
 
 @interface KNViewController ()
 - (void)startCapture;
@@ -25,8 +27,6 @@
     self.navigationController.navigationBar.hidden = YES;
     self.wantsFullScreenLayout = YES;
     
-    NSLog(@"_____________%f %f %f %f", _viewCapturePreview.frame.origin.x, _viewCapturePreview.frame.origin.y, _viewCapturePreview.frame.size.width, _viewCapturePreview.frame.size.height);
-    
     [self startCapture];
 }
 
@@ -42,16 +42,37 @@
     _capture = [[KNVideoCapture alloc] init];
     [_capture startVideoWithPreview:_viewCapturePreview
                           frameRate:30
-                         resolution:kKNCaptureHigh 
-              withCaptureCompletion:^(UIImage *img) {
-                  
-                  
+                         resolution:kKNCapture480
+                          ouputType:kKNCaptureOutputBuffer
+              withCaptureCompletion:^(id outputData)
+    {
+        NSLog(@"%p", outputData);
     }];
     [_capture setMirroring:YES];
 }
 
-static BOOL mirror;
-- (IBAction)mirror:(id)sender {
-    [_capture setMirroring:!mirror];
+- (IBAction)testShot:(id)sender {
+    
+//    [sender setEnabled:NO];
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        
+//        @autoreleasepool {
+//            
+//            NSString* savefile = [NSString stringWithFormat:@"%@/%@", [[KNFileManager sharedObject] documentDirectory], @"test"];
+//            KNVideoWriter* writer = [[KNVideoWriter alloc] initWithFilepath:savefile
+//                                                                   fileType:kKNVideoWriterFileTypeM4V
+//                                                                 resolution:CGSizeMake(640, 480)
+//                                                                        fps:30
+//                                                                   duration:1];
+//        }
+//        [sender performSelectorOnMainThread:@selector(setEnabled:)
+//                                 withObject:[NSNumber numberWithBool:YES]
+//                              waitUntilDone:NO];
+//    });
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+}
+
 @end

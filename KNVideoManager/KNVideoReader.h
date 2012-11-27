@@ -10,7 +10,7 @@
 #import "KNVideoBase.h"
 
 @interface KNVideoReader : KNVideoBase
-- (id)initWithFilename:(NSString *)filename;
+- (id)initWithFilenpath:(NSString *)filepath;
 - (void)readBufferBlock:(void(^)(id buff))completion;
 - (void)readFinish;
 

@@ -11,20 +11,20 @@
 
 typedef enum tagKNVideoWriterFileType {
     
-    KNVideoWriterFileTypeMov = 0,
-    KNVideoWriterFileTypeMP4,
-    KNVideoWriterFileTypeM4V
+    kKNVideoWriterFileTypeMov = 0,
+    kKNVideoWriterFileTypeMP4,
+    kKNVideoWriterFileTypeM4V
     
 }KNVideoWriterFileType;
 
 
 @interface KNVideoBase : NSObject
 
+@property (copy, nonatomic) NSString* filepath;
 @property (copy, nonatomic) NSString* filename;
 @property (copy, nonatomic) NSString* filenameExt;
 @property (assign) KNVideoWriterFileType fileType;
 
-- (NSString *)getDocPath;
 - (NSString *)videoFileType;
 - (CGImageRef)imageFromSampleBuffer:(CMSampleBufferRef)sampleBuffer;
 @end

@@ -11,28 +11,42 @@
 
 @implementation KNVideoBase
 
+@synthesize filepath        = _filepath;
 @synthesize filename        = _filename;
 @synthesize filenameExt     = _filenameExt;
 @synthesize fileType        = _fileType;
 
-
--(NSString *)getDocPath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    return documentsDirectory;
+- (id)init {
+    self = [super init];
+    if (self) {
+        
+        @try {
+            NSArray* filepathcomp = [_filepath componentsSeparatedByString:@"/"];
+            NSString* name = [filepathcomp lastObject];
+            
+            NSArray* filenamecomp = [name componentsSeparatedByString:@"."];
+            self.filename = [filenamecomp objectAtIndex:0];
+            self.filepath = [filenamecomp objectAtIndex:1];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"%s %@", __func__, [exception description]);
+        }
+    }
+    return self;
 }
+
 
 - (NSString *)videoFileType {
     
     NSString* type = nil;
     
     switch (_fileType) {
-        case KNVideoWriterFileTypeMP4:
+        case kKNVideoWriterFileTypeMP4:
             type = AVFileTypeMPEG4;
             self.filenameExt = @"mp4";
             break;
             
-        case KNVideoWriterFileTypeM4V:
+        case kKNVideoWriterFileTypeM4V:
             type = AVFileTypeAppleM4V;
             self.filenameExt = @"m4v";
             break;

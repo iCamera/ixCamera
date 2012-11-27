@@ -13,13 +13,13 @@ typedef enum {
     kKNGravityResizeToFit,
     kKNGravityAspectFill,
     kKNGravityAspectFit
-}kKNPreviewGravity;
+}KNPreviewGravity;
 
 typedef enum {
     kKNCameraFront,
     kKNCameraBack,
     kKNCameraOff,
-}kKNCameraPosition;
+}KNCameraPosition;
 
 
 typedef enum {
@@ -28,23 +28,29 @@ typedef enum {
     kKNCaptureLow,
     kKNCapture480,
     kKNCapture720
-}kKNCaptureResolution;
+}KNCaptureResolution;
+
+typedef enum {
+    kKNCaptureOutputBuffer,
+    kKNCaptureOutputImage
+}KNCaptureOutput;
 
 @interface KNVideoCapture : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate>
 
 - (void)startVideoWithPreview:(UIView *)preview
                     frameRate:(NSInteger)frameRate
-                   resolution:(kKNCaptureResolution)resolution
-        withCaptureCompletion:(void(^)(UIImage* img))competion;
+                   resolution:(KNCaptureResolution)resolution
+                    ouputType:(KNCaptureOutput)outputType
+        withCaptureCompletion:(void(^)(id outputData))competion;
 
 - (void)stopVideo;
 
 
-- (void)previewVideoGravity:(kKNPreviewGravity)gravity;
+- (void)previewVideoGravity:(KNPreviewGravity)gravity;
 
-- (void)changeCameraPosition:(kKNCameraPosition)cameraPosition;
+- (void)changeCameraPosition:(KNCameraPosition)cameraPosition;
 
-- (BOOL)changeCaptureResolution:(kKNCaptureResolution)resolution;
+- (BOOL)changeCaptureResolution:(KNCaptureResolution)resolution;
 
 - (void)changeCaptureFrameRate:(NSInteger)framerate;
 

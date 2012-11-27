@@ -18,20 +18,21 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     BOOL autoTorch_;
     BOOL mirriring_;
     
-    void(^captureCompletion)(UIImage* img);
+    void(^captureCompletion)(id outputData);
 }
 
 @property (strong, nonatomic) AVCaptureSession* session;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer* previewLayer;
 @property (strong, nonatomic) UIView* viewPreview;
 @property NSInteger captureFrameRate;
-@property kKNCaptureResolution captureResolution;
-@property CATransform3D noMorrorTransform;
+@property KNCaptureResolution captureResolution;
+@property KNCaptureOutput ouputType;
+
 
 - (AVCaptureSession *)session;
 - (AVCaptureDevice *)cameraPosition:(AVCaptureDevicePosition)position;
 
-- (NSString *)preset:(kKNCaptureResolution)resolution;
+- (NSString *)preset:(KNCaptureResolution)resolution;
 
 - (AVCaptureDeviceInput *)currentInput;
 - (AVCaptureVideoDataOutput *)currentOutput;
@@ -49,7 +50,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 @synthesize viewPreview         = _viewPreview;
 @synthesize captureFrameRate    = _captureFrameRate;
 @synthesize captureResolution   = _captureResolution;
-@synthesize noMorrorTransform   = _noMorrorTransform;
+@synthesize ouputType           = _ouputType;
 
 - (id)init {
     self = [super init];
@@ -71,7 +72,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     return nil;
 }
 
-- (NSString *)preset:(kKNCaptureResolution)resolution {
+- (NSString *)preset:(KNCaptureResolution)resolution {
     
     NSString* preset = AVCaptureSessionPresetMedium;
  
@@ -178,7 +179,6 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 
     if (_viewPreview) {
         AVCaptureVideoPreviewLayer* previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
-        self.noMorrorTransform = previewLayer.transform;
         previewLayer.frame = _viewPreview.bounds;
         previewLayer.videoGravity = AVLayerVideoGravityResize;
         [_viewPreview.layer addSublayer:previewLayer];
@@ -192,12 +192,14 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 #pragma mark - Public
 - (void)startVideoWithPreview:(UIView *)preview
                     frameRate:(NSInteger)frameRate
-                   resolution:(kKNCaptureResolution)resolution
-        withCaptureCompletion:(void(^)(UIImage* img))competion {
+                   resolution:(KNCaptureResolution)resolution
+                    ouputType:(KNCaptureOutput)outputType
+        withCaptureCompletion:(void(^)(id outputData))competion {
 
     self.viewPreview        = preview;
     self.captureFrameRate   = frameRate;
     self.captureResolution  = resolution;
+    self.ouputType          = outputType;
     captureCompletion       = [competion copy];
     
     self.session = [self session];
@@ -221,7 +223,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 }
 
 
-- (void)previewVideoGravity:(kKNPreviewGravity)gravity {
+- (void)previewVideoGravity:(KNPreviewGravity)gravity {
     
     NSString* g = AVLayerVideoGravityResize;
     switch (gravity) {
@@ -240,7 +242,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     self.previewLayer.videoGravity = g;
 }
 
-- (void)changeCameraPosition:(kKNCameraPosition)cameraPosition {
+- (void)changeCameraPosition:(KNCameraPosition)cameraPosition {
     
     AVCaptureDevicePosition pos = AVCaptureDevicePositionUnspecified;
     
@@ -288,7 +290,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 }
 
 
-- (BOOL)changeCaptureResolution:(kKNCaptureResolution)resolution {
+- (BOOL)changeCaptureResolution:(KNCaptureResolution)resolution {
     
     NSString* preset = [self preset:resolution];
     
@@ -422,13 +424,24 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     
     if (captureCompletion) {
         
-        CGImageRef imageRef = [self imageFromSampleBuffer:sampleBuffer];
-        UIImage* img = [UIImage imageWithCGImage:imageRef scale:1.0f orientation:UIImageOrientationLeftMirrored];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            captureCompletion(img);
-            CGImageRelease(imageRef);
-        });
+        ///Output UIImage.
+        if (_ouputType == kKNCaptureOutputImage) {
+        
+            CGImageRef imageRef = [self imageFromSampleBuffer:sampleBuffer];
+            UIImage* img = [UIImage imageWithCGImage:imageRef scale:1.0f orientation:UIImageOrientationLeftMirrored];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                captureCompletion(img);
+                CGImageRelease(imageRef);
+            });
+        }
+        
+        ///Output Buffer
+        if (_ouputType == kKNCaptureOutputBuffer) {
+            CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+            captureCompletion((__bridge id)(imageBuffer));
+        }
     }
     [self changeFrameRate:connection];
 }

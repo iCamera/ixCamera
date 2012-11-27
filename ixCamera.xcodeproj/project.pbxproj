@@ -27,6 +27,7 @@
 		1D7A7289165B46770045EBE5 /* KNVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A7283165B46770045EBE5 /* KNVideoCapture.m */; };
 		1D7A728A165B46770045EBE5 /* KNVideoReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A7285165B46770045EBE5 /* KNVideoReader.m */; };
 		1D7A728B165B46770045EBE5 /* KNVideoWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A7287165B46770045EBE5 /* KNVideoWriter.m */; };
+		BE0D4D411665121B007556B4 /* KNFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D4D401665121B007556B4 /* KNFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,9 @@
 		1D7A7285165B46770045EBE5 /* KNVideoReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVideoReader.m; sourceTree = "<group>"; };
 		1D7A7286165B46770045EBE5 /* KNVideoWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNVideoWriter.h; sourceTree = "<group>"; };
 		1D7A7287165B46770045EBE5 /* KNVideoWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVideoWriter.m; sourceTree = "<group>"; };
+		BE0D4D3F1665121B007556B4 /* KNFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFileManager.h; sourceTree = "<group>"; };
+		BE0D4D401665121B007556B4 /* KNFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFileManager.m; sourceTree = "<group>"; };
+		BE0D4D4216651696007556B4 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		1D7A7231165B3A8C0045EBE5 = {
 			isa = PBXGroup;
 			children = (
+				BE0D4D3D1665120B007556B4 /* KNut */,
 				1D7A7290165B4E4C0045EBE5 /* Wrappers */,
 				1D7A727F165B46770045EBE5 /* KNVideoManager */,
 				1D7A7246165B3A8C0045EBE5 /* ixCamera */,
@@ -117,6 +122,7 @@
 		1D7A7246165B3A8C0045EBE5 /* ixCamera */ = {
 			isa = PBXGroup;
 			children = (
+				BE0D4D4216651696007556B4 /* Defines.h */,
 				1D7A724F165B3A8C0045EBE5 /* KNAppDelegate.h */,
 				1D7A7250165B3A8C0045EBE5 /* KNAppDelegate.m */,
 				1D7A7258165B3A8C0045EBE5 /* MainStoryboard.storyboard */,
@@ -161,6 +167,15 @@
 			children = (
 			);
 			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		BE0D4D3D1665120B007556B4 /* KNut */ = {
+			isa = PBXGroup;
+			children = (
+				BE0D4D3F1665121B007556B4 /* KNFileManager.h */,
+				BE0D4D401665121B007556B4 /* KNFileManager.m */,
+			);
+			path = KNut;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +252,7 @@
 				1D7A7289165B46770045EBE5 /* KNVideoCapture.m in Sources */,
 				1D7A728A165B46770045EBE5 /* KNVideoReader.m in Sources */,
 				1D7A728B165B46770045EBE5 /* KNVideoWriter.m in Sources */,
+				BE0D4D411665121B007556B4 /* KNFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -38,17 +38,17 @@
 @synthesize fps                 = _fps;
 @synthesize duration            = _duration;
 
-- (id)initWithFilename:(NSString *)filename
+- (id)initWithFilepath:(NSString *)filepath
               fileType:(KNVideoWriterFileType)type
             resolution:(CGSize)resolution
                    fps:(NSInteger)fps
               duration:(NSInteger)duration {
-    
+
 
     self = [super init];
     if (self) {
         
-        self.filename       = filename;
+        self.filename       = filepath;
         self.fileType       = type;
         _writtenDuration    = 0;
         _resolution         = resolution;
@@ -148,9 +148,7 @@
     NSString* fileType = [self videoFileType];
     
     NSError* error = nil;
-    NSString* savePath = [NSString stringWithFormat:@"%@/%@.%@", [self getDocPath], self.filename, self.filenameExt];
-    NSURL* url = [NSURL fileURLWithPath:savePath];
-    
+    NSURL* url = [NSURL fileURLWithPath:self.filepath];
     
     ///Writer
     AVAssetWriter* videoWriter = [[AVAssetWriter alloc] initWithURL:url fileType:fileType error:&error];

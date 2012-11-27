@@ -11,7 +11,7 @@
 
 @interface KNVideoWriter : KNVideoBase
 
-- (id)initWithFilename:(NSString *)filename
+- (id)initWithFilepath:(NSString *)filepath
               fileType:(KNVideoWriterFileType)type
             resolution:(CGSize)resolution
                    fps:(NSInteger)fps

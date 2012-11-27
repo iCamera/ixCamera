@@ -23,11 +23,11 @@
 
 
 #pragma mark - Public
-- (id)initWithFilename:(NSString *)filename {
+- (id)initWithFilenpath:(NSString *)filepath {
 
     self = [super init];
     if (self) {
-        self.filename = filename;
+        self.filepath = filepath;
         [self initAssetReader];
     }
     return self;
@@ -37,8 +37,7 @@
 #pragma mark - Private
 - (void)initAssetReader {
 
-    NSString* path = [NSString stringWithFormat:@"%@/%@", [self getDocPath], self.filename];
-    NSURL* url = [NSURL fileURLWithPath:path];
+    NSURL* url = [NSURL fileURLWithPath:self.filepath];
     AVURLAsset* urlAsset = [[AVURLAsset alloc] initWithURL:url options:nil];
 
     NSArray* tracks = [urlAsset tracksWithMediaType:AVMediaTypeVideo];

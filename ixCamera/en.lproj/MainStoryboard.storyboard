@@ -18,10 +18,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vHj-nk-ZwD">
-                                <rect key="frame" x="126" y="186" width="68" height="44"/>
+                                <rect key="frame" x="90" y="350" width="139" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Mirror">
+                                <state key="normal" title="shot 30frm/1sec">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -29,7 +29,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="mirror:" destination="2" eventType="touchUpInside" id="Ldg-i0-FXg"/>
+                                    <action selector="testShot:" destination="2" eventType="touchUpInside" id="jnT-2l-pE7"/>
+                                    <segue destination="lzB-nc-YEc" kind="push" id="Kum-t0-uC2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,6 +46,63 @@
             </objects>
             <point key="canvasLocation" x="352" y="21"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="LYo-2u-Abn">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="lzB-nc-YEc" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="o8K-hp-qeB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dB5-5o-aAr">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ixshot" id="DhU-6b-ase">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="d9A-r7-cCT" kind="push" id="rIu-h1-ink"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="lzB-nc-YEc" id="D9H-hd-QIi"/>
+                            <outlet property="delegate" destination="lzB-nc-YEc" id="Y6u-ow-Sj8"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="rSH-rK-jvq"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQp-cq-g6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="47"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="grU-0n-HkF">
+            <objects>
+                <glkViewController autoresizesArchivedViewToFullSize="NO" preferredFramesPerSecond="30" id="d9A-r7-cCT" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ijr-rU-2dN">
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="d9A-r7-cCT" id="CZJ-Ln-OVz"/>
+                        </connections>
+                    </glkView>
+                    <navigationItem key="navigationItem" id="b8w-jh-yo7"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jo-bB-LGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376" y="640"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="s4W-TJ-JIB">
             <objects>
@@ -54,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="J97-e0-wFR"/>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="mJk-ZP-Cit"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9v-z3-KnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -66,9 +124,21 @@
         <class className="KNViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/KNViewController.h"/>
             <relationships>
-                <relationship kind="action" name="mirror:"/>
+                <relationship kind="action" name="testShot:"/>
                 <relationship kind="outlet" name="viewCapturePreview" candidateClass="UIView"/>
             </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

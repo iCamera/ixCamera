@@ -51,6 +51,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 @synthesize captureFrameRate    = _captureFrameRate;
 @synthesize captureResolution   = _captureResolution;
 @synthesize ouputType           = _ouputType;
+@synthesize captureSize         = _captureSize;
 
 - (id)init {
     self = [super init];
@@ -89,12 +90,20 @@ const NSInteger DEFAULT_FRAMERATE = 30;
             preset = AVCaptureSessionPresetLow;
             break;
             
+        case kKNCapture288:
+            preset = AVCaptureSessionPreset352x288;
+            break;
+            
         case kKNCapture480:
             preset = AVCaptureSessionPreset640x480;
             break;
             
         case kKNCapture720:
             preset = AVCaptureSessionPreset1280x720;
+            break;
+            
+        case kKNCapture1080:
+            preset = AVCaptureSessionPreset1920x1080;
             break;
     }
 
@@ -386,6 +395,11 @@ const NSInteger DEFAULT_FRAMERATE = 30;
         self.previewLayer.transform = CATransform3DMakeRotation(M_PI, 0.0f, 1.0f, 0.0f);
     }
     mirriring_ = !mirriring_;
+    
+    if (devicePostion_ == AVCaptureDevicePositionFront)
+         [self changeCaptureResolution:kKNCapture480];
+    else if (devicePostion_ == AVCaptureDevicePositionBack)
+        [self changeCaptureResolution:kKNCapture720];
 }
 
 - (CGImageRef)imageFromSampleBuffer:(CMSampleBufferRef) sampleBuffer
@@ -424,6 +438,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     
     if (captureCompletion) {
         
+        NSLog(@"Preset: %@", _session.sessionPreset);
         
         ///Output UIImage.
         if (_ouputType == kKNCaptureOutputImage) {
@@ -440,7 +455,13 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
         ///Output Buffer
         if (_ouputType == kKNCaptureOutputBuffer) {
             CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+            
+            CGSize size1 = CVImageBufferGetDisplaySize(imageBuffer);
+            CGSize size2 = CVImageBufferGetEncodedSize(imageBuffer);
+            NSLog(@"Disp Size : %.0f, %.0f           Enc Size : %.0f, %.0f", size1.width, size1.height, size2.width, size2.height);
+            
             captureCompletion((__bridge id)(imageBuffer));
+            
         }
     }
     [self changeFrameRate:connection];

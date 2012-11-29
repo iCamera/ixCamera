@@ -26,8 +26,10 @@ typedef enum {
     kKNCaptureHigh,
     kKNCaptureMedium,
     kKNCaptureLow,
+    kKNCapture288,
     kKNCapture480,
-    kKNCapture720
+    kKNCapture720,
+    kKNCapture1080
 }KNCaptureResolution;
 
 typedef enum {
@@ -36,6 +38,7 @@ typedef enum {
 }KNCaptureOutput;
 
 @interface KNVideoCapture : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate>
+@property CGSize captureSize;
 
 - (void)startVideoWithPreview:(UIView *)preview
                     frameRate:(NSInteger)frameRate

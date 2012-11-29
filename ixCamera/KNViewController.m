@@ -11,7 +11,10 @@
 #import "KNVideoWriter.h"
 #import "KNFileManager.h"
 
-@interface KNViewController ()
+@interface KNViewController () {
+    BOOL capture_;
+}
+@property (strong, nonatomic) KNVideoWriter* videoWriter;
 - (void)startCapture;
 @end
 
@@ -19,6 +22,7 @@
 
 @synthesize viewCapturePreview = _viewCapturePreview;
 @synthesize capture = _capture;
+@synthesize videoWriter = _videoWriter;
 
 - (void)viewDidLoad
 {
@@ -42,7 +46,7 @@
     _capture = [[KNVideoCapture alloc] init];
     [_capture startVideoWithPreview:_viewCapturePreview
                           frameRate:30
-                         resolution:kKNCapture480
+                         resolution:kKNCaptureHigh
                           ouputType:kKNCaptureOutputBuffer
               withCaptureCompletion:^(id outputData)
     {
@@ -52,6 +56,13 @@
 }
 
 - (IBAction)testShot:(id)sender {
+    
+    [_capture setMirroring:![_capture isMirroring]];
+    return;
+    
+    NSString* docPath = [[KNFileManager sharedObject] documentDirectory];
+    NSString* filePath = [NSString stringWithFormat:@"%@/@", docPath, [[NSDate date] description]];
+        
     
 //    [sender setEnabled:NO];
 //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

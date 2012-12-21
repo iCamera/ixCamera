@@ -28,7 +28,6 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 @property KNCaptureResolution captureResolution;
 @property KNCaptureOutput ouputType;
 
-
 - (AVCaptureSession *)session;
 - (AVCaptureDevice *)cameraPosition:(AVCaptureDevicePosition)position;
 
@@ -52,6 +51,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 @synthesize captureResolution   = _captureResolution;
 @synthesize ouputType           = _ouputType;
 @synthesize captureSize         = _captureSize;
+@synthesize cameraPosition      = _cameraPosition;
 
 - (id)init {
     self = [super init];
@@ -67,8 +67,10 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     
     for (AVCaptureDevice* device in [AVCaptureDevice devices]) {
         
-        if (device.position == position)
-            return device;
+        if ([device hasMediaType:AVMediaTypeVideo]) {
+            if (device.position == position)
+                return device;
+        }
     }
     return nil;
 }
@@ -154,13 +156,13 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 - (AVCaptureSession *)session {
     
     if (_session)
-        return nil;
+        return _session;
  
     AVCaptureSession *session = [[AVCaptureSession alloc] init];
     session.sessionPreset = [self preset:_captureResolution];
-    
 
     devicePostion_ = AVCaptureDevicePositionFront;
+    _cameraPosition = kKNCameraFront;
     AVCaptureDevice* device = [self cameraPosition:devicePostion_];
     
     NSError* error = nil;
@@ -170,8 +172,8 @@ const NSInteger DEFAULT_FRAMERATE = 30;
         session = nil;
         return  session;
     }
-    [session addInput:input];
-    
+    if ([session canAddInput:input])
+        [session addInput:input];
     
     AVCaptureVideoDataOutput* output = [[AVCaptureVideoDataOutput alloc] init];
     output.alwaysDiscardsLateVideoFrames = YES;
@@ -192,9 +194,8 @@ const NSInteger DEFAULT_FRAMERATE = 30;
         previewLayer.videoGravity = AVLayerVideoGravityResize;
         [_viewPreview.layer addSublayer:previewLayer];
         
-        self.previewLayer = previewLayer;
+        self.previewLayer = previewLayer;        
     }
-
     return  session;
 }
 
@@ -203,12 +204,14 @@ const NSInteger DEFAULT_FRAMERATE = 30;
                     frameRate:(NSInteger)frameRate
                    resolution:(KNCaptureResolution)resolution
                     ouputType:(KNCaptureOutput)outputType
+                    mirroring:(BOOL)mirror
         withCaptureCompletion:(void(^)(id outputData))competion {
 
     self.viewPreview        = preview;
     self.captureFrameRate   = frameRate;
     self.captureResolution  = resolution;
     self.ouputType          = outputType;
+    mirriring_              = mirror;
     captureCompletion       = [competion copy];
     
     self.session = [self session];
@@ -254,7 +257,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 - (void)changeCameraPosition:(KNCameraPosition)cameraPosition {
     
     AVCaptureDevicePosition pos = AVCaptureDevicePositionUnspecified;
-    
+
     switch (cameraPosition) {
         case kKNCameraFront:
             pos = AVCaptureDevicePositionFront;
@@ -271,6 +274,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
         default:
             break;
     }
+    _cameraPosition = cameraPosition;
     devicePostion_ = pos;
     
     [_session beginConfiguration];
@@ -281,7 +285,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     if (!newInput) {
         NSLog(@"%s %@", __func__, [error localizedDescription]);
     } else {
-        
+                
         [self removeCurrentInput];
         if ([_session canAddInput:newInput]) {
             [_session addInput:newInput];
@@ -394,12 +398,7 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     } else {
         self.previewLayer.transform = CATransform3DMakeRotation(M_PI, 0.0f, 1.0f, 0.0f);
     }
-    mirriring_ = !mirriring_;
-    
-    if (devicePostion_ == AVCaptureDevicePositionFront)
-         [self changeCaptureResolution:kKNCapture480];
-    else if (devicePostion_ == AVCaptureDevicePositionBack)
-        [self changeCaptureResolution:kKNCapture720];
+    mirriring_ = !mirriring_;    
 }
 
 - (CGImageRef)imageFromSampleBuffer:(CMSampleBufferRef) sampleBuffer
@@ -435,10 +434,8 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 - (void)captureOutput:(AVCaptureOutput *)captureOutput
 didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
        fromConnection:(AVCaptureConnection *)connection {
-    
-    if (captureCompletion) {
         
-        NSLog(@"Preset: %@", _session.sessionPreset);
+    if (captureCompletion) {
         
         ///Output UIImage.
         if (_ouputType == kKNCaptureOutputImage) {
@@ -454,14 +451,13 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
         
         ///Output Buffer
         if (_ouputType == kKNCaptureOutputBuffer) {
+            
             CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
             
-            CGSize size1 = CVImageBufferGetDisplaySize(imageBuffer);
-            CGSize size2 = CVImageBufferGetEncodedSize(imageBuffer);
-            NSLog(@"Disp Size : %.0f, %.0f           Enc Size : %.0f, %.0f", size1.width, size1.height, size2.width, size2.height);
+//            size_t width = CVPixelBufferGetWidth(imageBuffer);
+//            size_t height = CVPixelBufferGetHeight(imageBuffer);
             
             captureCompletion((__bridge id)(imageBuffer));
-            
         }
     }
     [self changeFrameRate:connection];

@@ -15,4 +15,5 @@
 @property (strong, nonatomic) KNVideoCapture* capture;
 
 - (IBAction)testShot:(id)sender;
+- (IBAction)position:(id)sender;
 @end

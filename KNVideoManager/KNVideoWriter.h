@@ -20,6 +20,9 @@
 - (void)writeBuffer:(UIImage *)image
      withCompletion:(void(^)(BOOL finishedByDuration))completion;
 
+- (void)writeBufferSample:(CVPixelBufferRef)buffer
+           withCompletion:(void(^)(BOOL finishedByDuration))completion;
+
 - (void)writeFinishWithCompletion:(void(^)(void))completion;
 
 @end

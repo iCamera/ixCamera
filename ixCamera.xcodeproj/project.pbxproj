@@ -27,6 +27,8 @@
 		1D7A7289165B46770045EBE5 /* KNVideoCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A7283165B46770045EBE5 /* KNVideoCapture.m */; };
 		1D7A728A165B46770045EBE5 /* KNVideoReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A7285165B46770045EBE5 /* KNVideoReader.m */; };
 		1D7A728B165B46770045EBE5 /* KNVideoWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A7287165B46770045EBE5 /* KNVideoWriter.m */; };
+		1DDC466A167F068000E56EDD /* KNEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC4669167F068000E56EDD /* KNEncoder.m */; };
+		1DDC4675167F0C3B00E56EDD /* KNEncodeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC4674167F0C3B00E56EDD /* KNEncodeOperation.m */; };
 		BE0D4D411665121B007556B4 /* KNFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D4D401665121B007556B4 /* KNFileManager.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,10 @@
 		1D7A7285165B46770045EBE5 /* KNVideoReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVideoReader.m; sourceTree = "<group>"; };
 		1D7A7286165B46770045EBE5 /* KNVideoWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNVideoWriter.h; sourceTree = "<group>"; };
 		1D7A7287165B46770045EBE5 /* KNVideoWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVideoWriter.m; sourceTree = "<group>"; };
+		1DDC4668167F068000E56EDD /* KNEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNEncoder.h; sourceTree = "<group>"; };
+		1DDC4669167F068000E56EDD /* KNEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNEncoder.m; sourceTree = "<group>"; };
+		1DDC4673167F0C3B00E56EDD /* KNEncodeOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNEncodeOperation.h; sourceTree = "<group>"; };
+		1DDC4674167F0C3B00E56EDD /* KNEncodeOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNEncodeOperation.m; sourceTree = "<group>"; };
 		BE0D4D3F1665121B007556B4 /* KNFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFileManager.h; sourceTree = "<group>"; };
 		BE0D4D401665121B007556B4 /* KNFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFileManager.m; sourceTree = "<group>"; };
 		BE0D4D4216651696007556B4 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 		1D7A7231165B3A8C0045EBE5 = {
 			isa = PBXGroup;
 			children = (
+				1DDC4667167F065200E56EDD /* KNEncoder */,
 				BE0D4D3D1665120B007556B4 /* KNut */,
 				1D7A7290165B4E4C0045EBE5 /* Wrappers */,
 				1D7A727F165B46770045EBE5 /* KNVideoManager */,
@@ -167,6 +174,17 @@
 			children = (
 			);
 			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		1DDC4667167F065200E56EDD /* KNEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				1DDC4673167F0C3B00E56EDD /* KNEncodeOperation.h */,
+				1DDC4674167F0C3B00E56EDD /* KNEncodeOperation.m */,
+				1DDC4668167F068000E56EDD /* KNEncoder.h */,
+				1DDC4669167F068000E56EDD /* KNEncoder.m */,
+			);
+			path = KNEncoder;
 			sourceTree = "<group>";
 		};
 		BE0D4D3D1665120B007556B4 /* KNut */ = {
@@ -253,6 +271,8 @@
 				1D7A728A165B46770045EBE5 /* KNVideoReader.m in Sources */,
 				1D7A728B165B46770045EBE5 /* KNVideoWriter.m in Sources */,
 				BE0D4D411665121B007556B4 /* KNFileManager.m in Sources */,
+				1DDC466A167F068000E56EDD /* KNEncoder.m in Sources */,
+				1DDC4675167F0C3B00E56EDD /* KNEncodeOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

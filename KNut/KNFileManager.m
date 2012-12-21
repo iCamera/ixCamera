@@ -38,4 +38,17 @@ static KNFileManager* gInstance = nil;
     return libDirectory;
 }
 
+- (BOOL)deleteFile:(NSString *)filepath {
+
+    BOOL del = NO;
+    NSFileManager* fm = [NSFileManager defaultManager];
+    if ([fm fileExistsAtPath:filepath]) {
+        NSError* error;
+        del = [fm removeItemAtPath:filepath error:&error];
+        if (error) {
+            NSLog(@"%s %@", __func__, [error localizedDescription]);
+        }
+    }
+    return del;
+}
 @end

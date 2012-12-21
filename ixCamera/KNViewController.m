@@ -10,11 +10,13 @@
 #import "KNVideoCapture.h"
 #import "KNVideoWriter.h"
 #import "KNFileManager.h"
+#import "KNEncoder.h"
 
 @interface KNViewController () {
-    BOOL capture_;
+    BOOL fileWrite_;
 }
 @property (strong, nonatomic) KNVideoWriter* videoWriter;
+@property (strong, nonatomic) KNEncoder* encoder;
 - (void)startCapture;
 @end
 
@@ -24,13 +26,19 @@
 @synthesize capture = _capture;
 @synthesize videoWriter = _videoWriter;
 
+@synthesize encoder = _encoder;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.navigationController.navigationBar.hidden = YES;
     self.wantsFullScreenLayout = YES;
-    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
     [self startCapture];
 }
 
@@ -43,47 +51,37 @@
 
 - (void)startCapture {
     
+    _encoder = [[KNEncoder alloc] initWithResolution:CGSizeMake(640, 480)
+                                      segmentDuation:3
+                                           frameRate:5
+                                      frameRecvBlock:^(UInt8 *data, int size, int width, int height, int codecid)
+    {
+        NSLog(@"Encode : %d %d %d %d", size, width, height, codecid);
+    }];
+    
     _capture = [[KNVideoCapture alloc] init];
     [_capture startVideoWithPreview:_viewCapturePreview
-                          frameRate:30
+                          frameRate:5
                          resolution:kKNCaptureHigh
                           ouputType:kKNCaptureOutputBuffer
+                          mirroring:YES
               withCaptureCompletion:^(id outputData)
     {
-        NSLog(@"%p", outputData);
+        if (_encoder) {
+            [_encoder encodeFrame:(__bridge CVPixelBufferRef)(outputData)];
+        }
     }];
     [_capture setMirroring:YES];
 }
 
 - (IBAction)testShot:(id)sender {
-    
-    [_capture setMirroring:![_capture isMirroring]];
-    return;
-    
-    NSString* docPath = [[KNFileManager sharedObject] documentDirectory];
-    NSString* filePath = [NSString stringWithFormat:@"%@/@", docPath, [[NSDate date] description]];
-        
-    
-//    [sender setEnabled:NO];
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        
-//        @autoreleasepool {
-//            
-//            NSString* savefile = [NSString stringWithFormat:@"%@/%@", [[KNFileManager sharedObject] documentDirectory], @"test"];
-//            KNVideoWriter* writer = [[KNVideoWriter alloc] initWithFilepath:savefile
-//                                                                   fileType:kKNVideoWriterFileTypeM4V
-//                                                                 resolution:CGSizeMake(640, 480)
-//                                                                        fps:30
-//                                                                   duration:1];
-//        }
-//        [sender performSelectorOnMainThread:@selector(setEnabled:)
-//                                 withObject:[NSNumber numberWithBool:YES]
-//                              waitUntilDone:NO];
-//    });
+}
+
+- (IBAction)position:(id)sender {
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
 }
+
 
 @end

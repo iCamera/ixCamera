@@ -48,7 +48,7 @@
     self = [super init];
     if (self) {
         
-        self.filename       = filepath;
+        self.filepath       = filepath;
         self.fileType       = type;
         _writtenDuration    = 0;
         _resolution         = resolution;
@@ -111,6 +111,58 @@
             
         } else {
          
+            if (completion) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(NO);
+                });
+            }
+        }
+    }
+}
+
+- (void)writeBufferSample:(CVPixelBufferRef)buffer
+           withCompletion:(void(^)(BOOL finishedByDuration))completion {
+    
+    if (finishWrite_) {
+        NSLog(@"%s Video wrinting is done.", __func__);
+        return;
+    }
+    
+    if ([_videoWriteInput isReadyForMoreMediaData]) {
+        
+        CMTime frameTime = CMTimeMake(1, _fps);
+        CMTime lastTime=CMTimeMake(_writtenFrame++, _fps);
+        CMTime presentTime=CMTimeAdd(lastTime, frameTime);
+        
+        BOOL ret = [_videoWriteAdapter appendPixelBuffer:buffer
+                                    withPresentationTime:presentTime];
+        
+        if (ret == NO)
+            NSLog(@"%s failed to append buffe.", __func__);
+        
+        
+        if (_writtenFrame % _fps == 0) {
+            ++_writtenDuration;
+            NSLog(@"%s wrriten duration : %d sec", __func__, _writtenDuration);
+        }
+        
+        
+        ///After Write.
+        if (_duration == _writtenDuration) {
+            
+            void(^writeFinishByDutation)(void) = ^(void) {
+                
+                if (completion) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        completion(YES);
+                    });
+                }
+            };
+            [self writeFinishWithCompletion:writeFinishByDutation];
+            return;
+            
+        } else {
+            
             if (completion) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     completion(NO);

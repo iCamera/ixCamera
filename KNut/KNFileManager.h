@@ -14,4 +14,5 @@
 - (NSString *)documentDirectory;
 - (NSString *)cacheDirectory;
 - (NSString *)libraryDirectoty;
+- (BOOL)deleteFile:(NSString *)filepath;
 @end

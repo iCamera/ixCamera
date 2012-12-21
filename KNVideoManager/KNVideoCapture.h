@@ -38,16 +38,17 @@ typedef enum {
 }KNCaptureOutput;
 
 @interface KNVideoCapture : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate>
+@property (readonly) KNCameraPosition cameraPosition;
 @property CGSize captureSize;
 
 - (void)startVideoWithPreview:(UIView *)preview
                     frameRate:(NSInteger)frameRate
                    resolution:(KNCaptureResolution)resolution
                     ouputType:(KNCaptureOutput)outputType
+                    mirroring:(BOOL)mirror
         withCaptureCompletion:(void(^)(id outputData))competion;
 
 - (void)stopVideo;
-
 
 - (void)previewVideoGravity:(KNPreviewGravity)gravity;
 

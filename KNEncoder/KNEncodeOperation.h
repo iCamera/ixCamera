@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface KNEncodeOperation : NSOperation
 - (id)initWithFilepath:(NSString *)filepath
-        frameRecvBlock:(void(^)(UInt8* data, int dataSize, int width, int height, int codecid))frameRecvBlock;
+        frameRecvBlock:(void(^)(CMSampleBufferRef pixelBuffer))frameRecvBlock;
 @end

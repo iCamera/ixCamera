@@ -38,6 +38,12 @@
 @synthesize fps                 = _fps;
 @synthesize duration            = _duration;
 
+- (void)dealloc {
+    
+    [_videoWriter release];
+    [super dealloc];
+}
+
 - (id)initWithFilepath:(NSString *)filepath
               fileType:(KNVideoWriterFileType)type
             resolution:(CGSize)resolution
@@ -65,7 +71,6 @@
      withCompletion:(void(^)(BOOL finishedByDuration))completion {
 
     if (finishWrite_) {
-        NSLog(@"%s Video wrinting is done.", __func__);
         return;
     }
     
@@ -87,11 +92,8 @@
         if (buffer)
             CVBufferRelease(buffer);
         
-//        [NSThread sleepForTimeInterval:0.05];
-        
         if (_writtenFrame % _fps == 0) {
             ++_writtenDuration;
-            NSLog(@"%s wrriten duration : %d sec", __func__, _writtenDuration);
         }
     
         
@@ -124,16 +126,15 @@
            withCompletion:(void(^)(BOOL finishedByDuration))completion {
     
     if (finishWrite_) {
-        NSLog(@"%s Video wrinting is done.", __func__);
         return;
     }
     
     if ([_videoWriteInput isReadyForMoreMediaData]) {
         
-        CMTime frameTime = CMTimeMake(1, _fps);
-        CMTime lastTime=CMTimeMake(_writtenFrame++, _fps);
-        CMTime presentTime=CMTimeAdd(lastTime, frameTime);
-        
+        CMTime frameTime    = CMTimeMake(1, _fps);
+        CMTime lastTime     = CMTimeMake(_writtenFrame++, _fps);
+        CMTime presentTime  = CMTimeAdd(lastTime, frameTime);
+
         BOOL ret = [_videoWriteAdapter appendPixelBuffer:buffer
                                     withPresentationTime:presentTime];
         
@@ -143,12 +144,11 @@
         
         if (_writtenFrame % _fps == 0) {
             ++_writtenDuration;
-            NSLog(@"%s wrriten duration : %d sec", __func__, _writtenDuration);
         }
         
         
         ///After Write.
-        if (_duration == _writtenDuration) {
+        if (_duration <= _writtenDuration) {
             
             void(^writeFinishByDutation)(void) = ^(void) {
                 
@@ -177,6 +177,7 @@
 
     [_videoWriteInput markAsFinished];
     [_videoWriter finishWritingWithCompletionHandler:^{
+        
         CVPixelBufferPoolRelease(_videoWriteAdapter.pixelBufferPool);
         
         self.videoWriteAdapter = nil;
@@ -201,24 +202,49 @@
     
     NSError* error = nil;
     NSURL* url = [NSURL fileURLWithPath:self.filepath];
-    
+
     ///Writer
-    AVAssetWriter* videoWriter = [[AVAssetWriter alloc] initWithURL:url fileType:fileType error:&error];
-    NSParameterAssert(videoWriter);
+    AVAssetWriter* v = [[AVAssetWriter alloc] initWithURL:url fileType:fileType error:&error];
+    NSParameterAssert(v);
     if (error) {
         NSLog(@"%s %@", __func__, [error localizedDescription]);
+        [v release];
         return;
     }
-    self.videoWriter = videoWriter;
+    self.videoWriter = v;
+    [v release];
     
     
     ///Input
+    NSDictionary *videoCleanApertureSettings = [NSDictionary dictionaryWithObjectsAndKeys:
+                                                [NSNumber numberWithInt:_resolution.width], AVVideoCleanApertureWidthKey,
+                                                [NSNumber numberWithInt:_resolution.height], AVVideoCleanApertureHeightKey,
+                                                [NSNumber numberWithInt:10], AVVideoCleanApertureHorizontalOffsetKey,
+                                                [NSNumber numberWithInt:10], AVVideoCleanApertureVerticalOffsetKey,
+                                                nil];
+    
+    
+//    NSDictionary *videoAspectRatioSettings = [NSDictionary dictionaryWithObjectsAndKeys:
+//                                              [NSNumber numberWithInt:3], AVVideoPixelAspectRatioHorizontalSpacingKey,
+//                                              [NSNumber numberWithInt:3],AVVideoPixelAspectRatioVerticalSpacingKey,
+//                                              nil];
+    
+    NSDictionary *codecSettings = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   [NSNumber numberWithInt:3200000], AVVideoAverageBitRateKey,
+                                   [NSNumber numberWithInt:1],AVVideoMaxKeyFrameIntervalKey,
+                                   videoCleanApertureSettings, AVVideoCleanApertureKey,
+                                   //videoAspectRatioSettings, AVVideoPixelAspectRatioKey,
+                                   //AVVideoProfileLevelH264Main30, AVVideoProfileLevelKey,
+                                   nil];
+
     NSDictionary* videoSettings = [NSDictionary dictionaryWithObjectsAndKeys:AVVideoCodecH264, AVVideoCodecKey,
                                    [NSNumber numberWithInt:_resolution.width], AVVideoWidthKey,
-                                   [NSNumber numberWithInt:_resolution.height], AVVideoHeightKey, nil];
+                                   [NSNumber numberWithInt:_resolution.height], AVVideoHeightKey,
+                                   codecSettings,AVVideoCompressionPropertiesKey,
+                                   nil];
     AVAssetWriterInput* videoWriterInput = [AVAssetWriterInput assetWriterInputWithMediaType:AVMediaTypeVideo
                                                                               outputSettings:videoSettings];
-//    videoWriterInput.expectsMediaDataInRealTime = YES;
+    videoWriterInput.expectsMediaDataInRealTime = YES;
     self.videoWriteInput = videoWriterInput;
     
     
@@ -228,8 +254,8 @@
                                                      sourcePixelBufferAttributes:nil];
     
     NSParameterAssert(videoWriterInput);
-    NSParameterAssert([videoWriter canAddInput:videoWriterInput]);
-    [videoWriter addInput:videoWriterInput];
+    NSParameterAssert([_videoWriter canAddInput:videoWriterInput]);
+    [_videoWriter addInput:videoWriterInput];
     
     
     self.videoWriteAdapter = adaptor;
@@ -257,7 +283,7 @@
                         frameWidth,
                         frameHeight,
                         kCVPixelFormatType_32ARGB,
-                        (__bridge CFDictionaryRef) options,
+                        (CFDictionaryRef) options,
                         &pxbuffer);
     
     CVPixelBufferLockBaseAddress(pxbuffer, 0);

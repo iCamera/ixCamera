@@ -11,7 +11,6 @@
 
 @interface KNVideoReader : KNVideoBase
 - (id)initWithFilenpath:(NSString *)filepath;
-- (void)readBufferBlock:(void(^)(id buff))completion;
+- (void)readBufferBlock:(void(^)(CMSampleBufferRef buff))completion;
 - (void)readFinish;
-
 @end

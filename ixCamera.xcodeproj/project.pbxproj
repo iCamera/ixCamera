@@ -30,6 +30,11 @@
 		1DDC466A167F068000E56EDD /* KNEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC4669167F068000E56EDD /* KNEncoder.m */; };
 		1DDC4675167F0C3B00E56EDD /* KNEncodeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC4674167F0C3B00E56EDD /* KNEncodeOperation.m */; };
 		BE0D4D411665121B007556B4 /* KNFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0D4D401665121B007556B4 /* KNFileManager.m */; };
+		BECE8EE117150512005AB346 /* KNRenderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE8EE017150512005AB346 /* KNRenderOperation.m */; };
+		BED526CA1713EADD000C5FAB /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED526C81713EADD000C5FAB /* GLKit.framework */; };
+		BED526CB1713EADD000C5FAB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED526C91713EADD000C5FAB /* OpenGLES.framework */; };
+		BED526D817140587000C5FAB /* KNGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = BED526D717140539000C5FAB /* KNGLView.m */; };
+		BED526DA17140B21000C5FAB /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED526D917140B21000C5FAB /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +74,13 @@
 		BE0D4D3F1665121B007556B4 /* KNFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFileManager.h; sourceTree = "<group>"; };
 		BE0D4D401665121B007556B4 /* KNFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFileManager.m; sourceTree = "<group>"; };
 		BE0D4D4216651696007556B4 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		BECE8EDF17150512005AB346 /* KNRenderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNRenderOperation.h; sourceTree = "<group>"; };
+		BECE8EE017150512005AB346 /* KNRenderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNRenderOperation.m; sourceTree = "<group>"; };
+		BED526C81713EADD000C5FAB /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BED526C91713EADD000C5FAB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BED526D617140539000C5FAB /* KNGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KNGLView.h; path = KNVideoManager/KNGLView.h; sourceTree = SOURCE_ROOT; };
+		BED526D717140539000C5FAB /* KNGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KNGLView.m; path = KNVideoManager/KNGLView.m; sourceTree = SOURCE_ROOT; };
+		BED526D917140B21000C5FAB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED526DA17140B21000C5FAB /* CoreImage.framework in Frameworks */,
+				BED526CA1713EADD000C5FAB /* GLKit.framework in Frameworks */,
+				BED526CB1713EADD000C5FAB /* OpenGLES.framework in Frameworks */,
 				1D7A727E165B3D300045EBE5 /* CoreVideo.framework in Frameworks */,
 				1D7A7274165B3C6D0045EBE5 /* CoreMedia.framework in Frameworks */,
 				1D7A7272165B3C5C0045EBE5 /* QuartzCore.framework in Frameworks */,
@@ -93,6 +108,7 @@
 		1D7A7231165B3A8C0045EBE5 = {
 			isa = PBXGroup;
 			children = (
+				BED526D917140B21000C5FAB /* CoreImage.framework */,
 				1DDC4667167F065200E56EDD /* KNEncoder */,
 				BE0D4D3D1665120B007556B4 /* KNut */,
 				1D7A7290165B4E4C0045EBE5 /* Wrappers */,
@@ -114,6 +130,8 @@
 		1D7A723F165B3A8C0045EBE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BED526C81713EADD000C5FAB /* GLKit.framework */,
+				BED526C91713EADD000C5FAB /* OpenGLES.framework */,
 				1D7A727D165B3D300045EBE5 /* CoreVideo.framework */,
 				1D7A7273165B3C6D0045EBE5 /* CoreMedia.framework */,
 				1D7A7271165B3C5C0045EBE5 /* QuartzCore.framework */,
@@ -135,6 +153,10 @@
 				1D7A7258165B3A8C0045EBE5 /* MainStoryboard.storyboard */,
 				1D7A725B165B3A8C0045EBE5 /* KNViewController.h */,
 				1D7A725C165B3A8C0045EBE5 /* KNViewController.m */,
+				BED526D617140539000C5FAB /* KNGLView.h */,
+				BED526D717140539000C5FAB /* KNGLView.m */,
+				BECE8EDF17150512005AB346 /* KNRenderOperation.h */,
+				BECE8EE017150512005AB346 /* KNRenderOperation.m */,
 				1D7A7247165B3A8C0045EBE5 /* Supporting Files */,
 			);
 			path = ixCamera;
@@ -263,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED526D817140587000C5FAB /* KNGLView.m in Sources */,
 				1D7A724D165B3A8C0045EBE5 /* main.m in Sources */,
 				1D7A7251165B3A8C0045EBE5 /* KNAppDelegate.m in Sources */,
 				1D7A725D165B3A8C0045EBE5 /* KNViewController.m in Sources */,
@@ -273,6 +296,7 @@
 				BE0D4D411665121B007556B4 /* KNFileManager.m in Sources */,
 				1DDC466A167F068000E56EDD /* KNEncoder.m in Sources */,
 				1DDC4675167F0C3B00E56EDD /* KNEncodeOperation.m in Sources */,
+				BECE8EE117150512005AB346 /* KNRenderOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +344,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -341,7 +365,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -351,6 +375,7 @@
 		1D7A7261165B3A8C0045EBE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ixCamera/ixCamera-Prefix.pch";
 				INFOPLIST_FILE = "ixCamera/ixCamera-Info.plist";
@@ -362,6 +387,7 @@
 		1D7A7262165B3A8C0045EBE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ixCamera/ixCamera-Prefix.pch";
 				INFOPLIST_FILE = "ixCamera/ixCamera-Info.plist";

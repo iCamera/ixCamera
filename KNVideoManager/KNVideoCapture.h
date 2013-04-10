@@ -37,7 +37,7 @@ typedef enum {
     kKNCaptureOutputImage
 }KNCaptureOutput;
 
-@interface KNVideoCapture : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface KNVideoCapture : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureFileOutputRecordingDelegate, AVCaptureFileOutputDelegate>
 @property (readonly) KNCameraPosition cameraPosition;
 @property CGSize captureSize;
 

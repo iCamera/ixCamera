@@ -12,14 +12,14 @@
 #import "KNEncodeOperation.h"
 
 @interface KNEncoder () {
-    void(^frameBlock_)(UInt8* data, int dataSize, int width, int height, int codecid);
+    void(^frameBlock_)(CMSampleBufferRef pixelBuffer);
     void(^encodeStop_)(void);
 }
 @property (retain, nonatomic)   KNVideoWriter* writer;
 @property (copy, nonatomic)     NSString* filename;
 @property (retain, nonatomic)   NSOperationQueue* frameQueue;
 @property CGSize resolution;
-@property NSInteger fileSegmentDuration;
+@property CGFloat fileSegmentDuration;
 @property NSInteger fps;
 @property BOOL stopEncode;
 
@@ -30,26 +30,42 @@
 
 @implementation KNEncoder
 
+@synthesize writer                  = _writer;
+@synthesize filename                = _filename;
+@synthesize frameQueue              = _frameQueue;
 @synthesize resolution              = _resolution;
 @synthesize fileSegmentDuration     = _fileSegmentDuration;
 @synthesize fps                     = _fps;
 @synthesize stopEncode              = _stopEncode;
 
+- (void)dealloc {
+    
+    [_frameQueue release];
+    [_writer release];
+    [_filename release];
+    
+    [frameBlock_ release];
+    [encodeStop_ release];
+    [super dealloc];
+}
+
 - (id)initWithResolution:(CGSize)resolution
           segmentDuation:(NSInteger)duration
                frameRate:(NSInteger)fps
-          frameRecvBlock:(void(^)(UInt8* data, int size, int width, int height, int codecid))frameRecvBlock {
+          frameRecvBlock:(void(^)(CMSampleBufferRef pixelBuffer))frameRecvBlock {
 
     self = [super init];
     if (self) {
         
-        _resolution = resolution;
-        _fileSegmentDuration = duration;
-        _fps = fps;
-        frameBlock_ = [frameRecvBlock copy];
+        _resolution             = resolution;
+        _fileSegmentDuration    = duration;
+        _fps                    = fps;
+        frameBlock_             = [frameRecvBlock copy];
         
         NSOperationQueue* q = [[NSOperationQueue alloc] init];
+        q.maxConcurrentOperationCount = 1;
         self.frameQueue = q;
+        [q release];
         
         [self createVideoWriter];
     }
@@ -81,13 +97,13 @@
     NSDate* curDate = [NSDate date];
     NSString* videofilePath = [NSString stringWithFormat:@"%@/%@.mp4", [[KNFileManager sharedObject] documentDirectory], [curDate description]];
     
-    KNVideoWriter* writer  = [[KNVideoWriter alloc] initWithFilepath:videofilePath
+    KNVideoWriter* w  = [[KNVideoWriter alloc] initWithFilepath:videofilePath
                                                             fileType:kKNVideoWriterFileTypeMP4
                                                           resolution:_resolution
                                                                  fps:_fps
                                                             duration:_fileSegmentDuration];
-    self.writer = writer;
-    writer = nil;
+    self.writer = w;
+    [w release];
 }
 
 - (void)releaseVideoWriter {
@@ -99,6 +115,7 @@
     KNEncodeOperation* op = [[KNEncodeOperation alloc] initWithFilepath:_writer.filepath
                                                          frameRecvBlock:frameBlock_];
     [_frameQueue addOperation:op];
+    [op release];
 }
 
 - (void)stopEncode:(void(^)(void))completion {

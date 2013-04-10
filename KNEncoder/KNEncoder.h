@@ -7,13 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface KNEncoder : NSObject
+
+//- (id)initWithResolution:(CGSize)resolution
+//          segmentDuation:(NSInteger)duration
+//               frameRate:(NSInteger)fps
+//          frameRecvBlock:(void(^)(UInt8* data, int size, int width, int height, int codecid))frameRecvBlock;
 
 - (id)initWithResolution:(CGSize)resolution
           segmentDuation:(NSInteger)duration
                frameRate:(NSInteger)fps
-          frameRecvBlock:(void(^)(UInt8* data, int size, int width, int height, int codecid))frameRecvBlock;
+          frameRecvBlock:(void(^)(CMSampleBufferRef pixelBuffer))frameRecvBlock;
+
 
 - (void)encodeFrame:(CVPixelBufferRef)frameBuff;
 

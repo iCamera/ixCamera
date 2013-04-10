@@ -1,0 +1,842 @@
+TixCamera
+v5
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Release-iphoneos/ixCamera.app/ResourceRules.plist
+cProcessInfoPlistFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Info.plist ixCamera/ixCamera-Info.plist
+cProcessPCH /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch.pth ixCamera/ixCamera-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch.pth ixCamera/ixCamera-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNAppDelegate.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/main.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNViewController.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoBase.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoCapture.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoReader.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoWriter.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNFileManager.o /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncoder.o /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncodeOperation.o /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/main.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNAppDelegate.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera normal armv7
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNViewController.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoBase.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoCapture.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoReader.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoWriter.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNFileManager.o /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncoder.o /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncodeOperation.o /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera normal armv7s
+cCreateUniversalBinary /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera normal "armv7 armv7s"
+cGenerateDSYMFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app.dSYM /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera
+cCopyStringsFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/en.lproj/InfoPlist.strings ixCamera/en.lproj/InfoPlist.strings
+cCopyPNGFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default.png ixCamera/Default.png
+cCopyPNGFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default@2x.png ixCamera/Default@2x.png
+cCopyPNGFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default-568h@2x.png ixCamera/Default-568h@2x.png
+cCompileStoryboard /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/en.lproj/MainStoryboard.storyboard
+cProcessProductPackaging "/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision" /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision" /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/embedded.mobileprovision
+cTouch /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent
+cCodeSign /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+cValidate /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c000000005142FBBD0000000000000110
+t1363344317
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+c0000000051399CE800000000000001A7
+t1362730216
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+c0000000051399CE800000000000001E5
+t1362730216
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c0000000051399CEB000000000036CDF0
+t1362730219
+s3591664
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000051399CEC0000000000322700
+t1362730220
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c0000000051399CEC00000000001694D0
+t1362730220
+s1479888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c0000000051399CEC0000000000041310
+t1362730220
+s267024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000051399CED000000000062AD10
+t1362730221
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c0000000051399CEC00000000000015F7
+t1362730220
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c0000000051399CEF00000000003596B0
+t1362730223
+s3511984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c0000000051399CEF0000000000000E8D
+t1362730223
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000051399CF200000000011BCDF0
+t1362730226
+s18599408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/Availability.h
+c0000000051399CF80000000000001B73
+t1362730232
+s7027
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/lib/libz.1.1.3.dylib
+c0000000051399CFA0000000000022520
+t1362730234
+s140576
+
+N/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision
+c0000000051529FE70000000000002C74
+t1364369383
+s11380
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m
+c0000000051637BBD0000000000000653
+t1365474237
+s1619
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m
+c0000000051637B700000000000000C70
+t1365474160
+s3184
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m
+c0000000050B6D5060000000000000AA6
+t1354159366
+s2726
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m
+c000000005163781F0000000000003689
+t1365473311
+s13961
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m
+c00000000516373960000000000000D6D
+t1365472150
+s3437
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m
+c0000000051637AF700000000000024DE
+t1365474039
+s9438
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m
+c0000000050CEDAB300000000000005C0
+t1355733683
+s1472
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app.dSYM
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default-568h@2x.png
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default.png
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default@2x.png
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Info.plist
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/PkgInfo
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ResourceRules.plist
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/embedded.mobileprovision
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/en.lproj/MainStoryboard.storyboardc
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNAppDelegate.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncodeOperation.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncoder.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNFileManager.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoBase.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoCapture.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoReader.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoWriter.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNViewController.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera.LinkFileList
+c0000000051637BD200000000000004DB
+t1365474258
+s1243
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNAppDelegate.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncodeOperation.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncoder.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNFileManager.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoBase.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoCapture.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoReader.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoWriter.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNViewController.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera.LinkFileList
+c0000000051637BD200000000000004E5
+t1365474258
+s1253
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/main.o
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/com.apple.build-tools.platform.validate
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent
+t2
+s0
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default-568h@2x.png
+c000000005062328600000000000048A2
+t1348612742
+s18594
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default.png
+c0000000050623286000000000000198C
+t1348612742
+s6540
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default@2x.png
+c00000000506232860000000000003EEB
+t1348612742
+s16107
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m
+c0000000050AB147D0000000000000802
+t1353389181
+s2050
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m
+c0000000051637B4B000000000000089D
+t1365474123
+s2205
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/en.lproj/InfoPlist.strings
+c0000000050AB030C000000000000002D
+t1353384716
+s45
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/en.lproj/MainStoryboard.storyboard
+c00000000516368C00000000000001B3D
+t1365469376
+s6973
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/ixCamera-Prefix.pch
+c0000000050AB030C000000000000013F
+t1353384716
+s319
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m
+c0000000050AB030C0000000000000150
+t1353384716
+s336
+
+N/var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch.pth
+t2
+s0
+
+NixCamera/ixCamera-Info.plist
+c0000000050CEBA8D00000000000004F7
+t1355725453
+s1271
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m
+r0
+
+CBuild AST from /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesd4b92e52b313b741^a31d5b52b313b741^---0#1#0#--18"Check dependencies36"EF6C9E61-1B69-4989-BB7C-313463F61CCC-
+
+CCodeSign /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+s387167063.550930
+e387167064.186513
+r1
+xCodeSign
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"CodeSign build/Release-iphoneos/ixCamera.appab218d57b313b741^0ebf2f58b313b741^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/0000000000000000^786"CodeSign build/Release-iphoneos/ixCamera.app    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 33ff21e7ff85a5dad4b4272066c8f9dd6d69c78c --resource-rules=/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ResourceRules.plist --entitlements /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app36"2936580F-4073-456C-B484-1EEFCC9D56A4-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNAppDelegate.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167058.937216
+e387167059.239092
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNAppDelegate.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m8318f052b313b741^a2463d53b313b741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m0000000000000000^3315"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNAppDelegate.o ixCamera/KNAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNAppDelegate.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNAppDelegate.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNAppDelegate.o36"90FA0BBF-32DB-4530-B327-0749DE68D04D-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncodeOperation.o /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167060.432784
+e387167060.635323
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncodeOperation.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m36727154b313b741^179ba254b313b741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m0000000000000000^3341"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncodeOperation.o KNEncoder/KNEncodeOperation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncodeOperation.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncodeOperation.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncodeOperation.o36"F63447F0-C8C2-4F3F-AE6C-E34E345F9095-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncoder.o /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167060.325910
+e387167060.646202
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncoder.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m29925354b313b741^897ea554b313b741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m0000000000000000^3293"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncoder.o KNEncoder/KNEncoder.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncoder.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncoder.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNEncoder.o36"331E6F8E-DCFF-4041-A80D-15F59812DEAD-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNFileManager.o /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167060.322221
+e387167060.394013
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNFileManager.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m61a55254b313b741^d5226a54b313b741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m0000000000000000^3307"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNFileManager.o KNut/KNFileManager.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNFileManager.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNFileManager.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNFileManager.o36"A74A20F8-2829-4760-ADF4-CC0024BC038B-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoBase.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167059.240380
+e387167059.750068
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoBase.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m8aac3d53b313b741^8c2dc053b313b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m0000000000000000^3315"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoBase.o KNVideoManager/KNVideoBase.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoBase.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoBase.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoBase.o36"664ED420-B864-4E23-A62B-0C7344ACA20C-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoCapture.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167059.660263
+e387167060.318082
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoCapture.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m890cab53b313b741^d1795154b313b741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m0000000000000000^3333"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoCapture.o KNVideoManager/KNVideoCapture.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoCapture.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoCapture.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoCapture.o36"AC2F6155-7583-4791-88CF-A8158E126995-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoReader.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167059.752420
+e387167060.043204
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoReader.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.ma1d6c053b313b741^8f1a0b54b313b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m0000000000000000^3327"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoReader.o KNVideoManager/KNVideoReader.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoReader.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoReader.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoReader.o36"D005F1FA-D4F3-4700-B5A0-1CE98E0A1BE7-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoWriter.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167060.045601
+e387167060.324678
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoWriter.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m2dcf0b54b313b741^452b5354b313b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m0000000000000000^3327"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoWriter.o KNVideoManager/KNVideoWriter.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoWriter.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoWriter.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNVideoWriter.o36"1F13E72B-8C45-46F1-8235-9353CDF0167C-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNViewController.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167059.219740
+e387167059.653565
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNViewController.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m0b623853b313b741^404fa753b313b741^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m0000000000000000^3333"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNViewController.o ixCamera/KNViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNViewController.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNViewController.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/KNViewController.o36"D8CABA26-8D71-4B82-B1C4-FC3886A0AEDC-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/main.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167059.014237
+e387167059.218421
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/main.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m93c70353b313b741^d9e93753b313b741^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m0000000000000000^3261"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/main.o ixCamera/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/main.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/main.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/main.o36"ACDAD68A-C588-42B3-9589-25117D067935-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNAppDelegate.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167060.647662
+e387167060.806211
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNAppDelegate.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.mf607a654b313b741^0c77ce54b313b741^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m0000000000000000^3322"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNAppDelegate.o ixCamera/KNAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNAppDelegate.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNAppDelegate.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNAppDelegate.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNAppDelegate.o36"50D0E0EA-33C3-4A5D-9E2E-E9EAE492A45C-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncodeOperation.o /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167061.587529
+e387167061.741596
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncodeOperation.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m1a8b9655b313b741^95d8bd55b313b741^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m0000000000000000^3348"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncodeOperation.o KNEncoder/KNEncodeOperation.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncodeOperation.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncodeOperation.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncodeOperation.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncodeOperation.o36"BC497560-BC3C-4D36-B0E1-E691230697F1-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncoder.o /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167061.544588
+e387167061.775674
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncoder.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.mf3909555b313b741^72a5c655b313b741^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m0000000000000000^3300"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncoder.o KNEncoder/KNEncoder.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncoder.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncoder.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNEncoder/KNEncoder.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNEncoder.o36"1539C3DF-61F2-4163-A76F-B1208165DB3B-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNFileManager.o /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167061.425044
+e387167061.493091
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNFileManager.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m41f46c55b313b741^944c7e55b313b741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m0000000000000000^3314"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNFileManager.o KNut/KNFileManager.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNFileManager.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNFileManager.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNut/KNFileManager.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNFileManager.o36"C0D6A71B-93B9-4D2D-B350-7E6DFF278795-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoBase.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167060.807498
+e387167061.069090
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoBase.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m8cd9ce54b313b741^4d2e1255b313b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m0000000000000000^3322"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoBase.o KNVideoManager/KNVideoBase.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoBase.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoBase.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoBase.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoBase.o36"53000DBA-6BB6-42C8-97A5-49B4F8153D1F-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoCapture.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167061.055657
+e387167061.423716
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoCapture.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m63630e55b313b741^f4896c55b313b741^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m0000000000000000^3340"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoCapture.o KNVideoManager/KNVideoCapture.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoCapture.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoCapture.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoCapture.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoCapture.o36"E8DFCE04-B460-4699-B310-2415504B1D0B-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoReader.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167061.071369
+e387167061.286262
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoReader.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m27691255b313b741^75584955b313b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m0000000000000000^3334"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoReader.o KNVideoManager/KNVideoReader.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoReader.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoReader.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoReader.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoReader.o36"BEA92830-C235-45CD-BED1-52DEBCE4C8BD-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoWriter.o /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167061.287853
+e387167061.584700
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoWriter.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.md0d24955b313b741^8bc39555b313b741^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m0000000000000000^3334"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoWriter.o KNVideoManager/KNVideoWriter.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoWriter.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoWriter.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/KNVideoManager/KNVideoWriter.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNVideoWriter.o36"7E05CABA-ADB3-4AB8-AEA7-934F4020FFB2-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNViewController.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167060.783754
+e387167061.054349
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNViewController.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.ma7cdc854b313b741^94fb0d55b313b741^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m0000000000000000^3340"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNViewController.o ixCamera/KNViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNViewController.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNViewController.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/KNViewController.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/KNViewController.o36"DD53F1B2-5AD7-43DC-8782-7D7512A0371A-
+
+CCompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/main.o /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167060.636663
+e387167060.718443
+r1
+xCompileC
+xbuild/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/main.o
+x/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m8238a354b313b741^1bf6b754b313b741^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m0000000000000000^3268"CompileC build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/main.o ixCamera/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch -MMD -MT dependencies -MF /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/main.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/main.m -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/main.o36"1A1DAC82-99B0-4627-B899-7B6C41F8CAFA-
+
+CCompileStoryboard /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/en.lproj/MainStoryboard.storyboard
+s387167062.336921
+e387167063.491772
+r1
+xCompileStoryboard
+x/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/en.lproj/MainStoryboard.storyboard
+o2013-04-09 11:24:23.211 Interface Builder Cocoa Touch Tool[22449:f07] CFPreferences: user home directory at file://localhost/Users/ken/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"CompileStoryboard ixCamera/en.lproj/MainStoryboard.storyboard26565656b313b741^4ef07d57b313b741^-236"2013-04-09 11:24:23.211 Interface Builder Cocoa Touch Tool[22449:f07] CFPreferences: user home directory at file://localhost/Users/ken/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/en.lproj/MainStoryboard.storyboard0000000000000000^864"CompileStoryboard ixCamera/en.lproj/MainStoryboard.storyboard    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/en.lproj/MainStoryboard.storyboardc /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/en.lproj/MainStoryboard.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"9AF0E233-DCB5-4B97-8E8A-C3F8A881B9DB-
+
+CCopyPNGFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default-568h@2x.png ixCamera/Default-568h@2x.png
+s387167062.288053
+e387167062.415852
+r1
+xCopyPNGFile
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default-568h@2x.png
+xixCamera/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile build/Release-iphoneos/ixCamera.app/Default-568h@2x.png ixCamera/Default-568h@2x.pngbbd34956b313b741^40866a56b313b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default-568h@2x.png0000000000000000^604"CopyPNGFile "build/Release-iphoneos/ixCamera.app/Default-568h@2x.png" "ixCamera/Default-568h@2x.png"    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default-568h@2x.png" "/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default-568h@2x.png"36"303A2C4E-3921-4FD8-BA2E-18E2D55D3039-
+
+CCopyPNGFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default.png ixCamera/Default.png
+s387167062.090728
+e387167062.286772
+r1
+xCopyPNGFile
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default.png
+xixCamera/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"CopyPNGFile build/Release-iphoneos/ixCamera.app/Default.png ixCamera/Default.png6e4c1756b313b741^f3754956b313b741^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default.png0000000000000000^564"CopyPNGFile build/Release-iphoneos/ixCamera.app/Default.png ixCamera/Default.png    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default.png /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default.png36"6BC27BE0-6DC5-4DE1-80EE-82DC8F72E755-
+
+CCopyPNGFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default@2x.png ixCamera/Default@2x.png
+s387167062.133196
+e387167062.335617
+r1
+xCopyPNGFile
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default@2x.png
+xixCamera/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"CopyPNGFile build/Release-iphoneos/ixCamera.app/Default@2x.png ixCamera/Default@2x.png69372256b313b741^5dfc5556b313b741^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default@2x.png0000000000000000^584"CopyPNGFile "build/Release-iphoneos/ixCamera.app/Default@2x.png" "ixCamera/Default@2x.png"    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/Default@2x.png" "/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Default@2x.png"36"8AC846F8-2E13-431D-9BA3-04A73853C543-
+
+CCopyStringsFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/en.lproj/InfoPlist.strings ixCamera/en.lproj/InfoPlist.strings
+s387167062.089877
+e387167062.131856
+r1
+xCopyStringsFile
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/en.lproj/InfoPlist.strings
+xixCamera/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy ixCamera/en.lproj/InfoPlist.strings091a1756b313b741^dae72956b313b741^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/en.lproj/InfoPlist.strings0000000000000000^554"CopyStringsFile build/Release-iphoneos/ixCamera.app/en.lproj/InfoPlist.strings ixCamera/en.lproj/InfoPlist.strings    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/en.lproj -- ixCamera/en.lproj/InfoPlist.strings36"B2FE5053-E4C0-4B16-8825-89A6D4B98E4E-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Release-iphoneos/ixCamera.app/ResourceRules.plist
+s387167058.365342
+e387167058.371590
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+xbuild/Release-iphoneos/ixCamera.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Release-iphoneos/ixCamera.app/ResourceRules.plistae9c5d52b313b741^bb275f52b313b741^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ResourceRules.plist000000000080d041^850"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist build/Release-iphoneos/ixCamera.app/ResourceRules.plist    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app36"1D25380B-9D38-4769-A2EA-2C3D8F65A151-
+
+CCreateUniversalBinary /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera normal "armv7 armv7s"
+s387167061.929654
+e387167061.946270
+r1
+xCreateUniversalBinary
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera
+xnormal
+xarmv7 armv7s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Create universal binary /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamerac426ee55b313b741^6fd3f355b313b741^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera000000000080d041^661"CreateUniversalBinary build/Release-iphoneos/ixCamera.app/ixCamera normal "armv7 armv7s"    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    lipo -create /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera -output /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera36"BBC4FC86-784D-4433-A334-B1DE1FF9DD03-
+
+CGenerateDSYMFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app.dSYM /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera
+s387167061.952775
+e387167062.039986
+r1
+xGenerateDSYMFile
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app.dSYM
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Generate /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app.dSYM26fff355b313b741^b01f1256b313b741^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app.dSYM000000000080d041^592"GenerateDSYMFile build/Release-iphoneos/ixCamera.app.dSYM build/Release-iphoneos/ixCamera.app/ixCamera    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ixCamera -o /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app.dSYM36"A5414093-28D7-4302-8B8E-5A4830A9D528-
+
+CLd /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera normal armv7
+s387167060.720149
+e387167060.782382
+r1
+xLd
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Link /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamerad575b854b313b741^f969c854b313b741^---0#0#0#--1205"Ld build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera normal armv7    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -filelist /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=5.1 -framework CoreVideo -framework CoreMedia -framework QuartzCore -framework AVFoundation -lz.1.1.3 -framework UIKit -framework Foundation -framework CoreGraphics -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7/ixCamera36"377C8139-BD83-48DB-B9C3-0A283D9FDB0B-
+
+CLd /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera normal armv7s
+s387167061.782653
+e387167061.922834
+r1
+xLd
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera
+xnormal
+xarmv7s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Link /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera2976c855b313b741^5cccf355b313b741^---0#0#0#--1210"Ld build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera normal armv7s    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv IPHONEOS_DEPLOYMENT_TARGET 5.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -filelist /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=5.1 -framework CoreVideo -framework CoreMedia -framework QuartzCore -framework AVFoundation -lz.1.1.3 -framework UIKit -framework Foundation -framework CoreGraphics -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/Objects-normal/armv7s/ixCamera36"1B65B1E5-CAA1-4879-81E4-429A0A347A30-
+
+CProcessInfoPlistFile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Info.plist ixCamera/ixCamera-Info.plist
+s387167058.365876
+e387167058.371584
+r1
+xProcessInfoPlistFile
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Info.plist
+xixCamera/ixCamera-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Process ixCamera/ixCamera-Info.plist06bb5d52b313b741^d1225f52b313b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/ixCamera-Info.plist0000000000000000^726"ProcessInfoPlistFile build/Release-iphoneos/ixCamera.app/Info.plist ixCamera/ixCamera-Info.plist    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ixCamera/ixCamera-Info.plist -genpkginfo /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/ResourceRules.plist -o /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/Info.plist36"9F03E9D1-4031-446A-BF66-2E23FD4429CA-
+
+CProcessPCH /Volumes/MAC2/gitHub/repo/ixCamera/DerivedData/ixCamera/Index/PrecompiledHeaders/ixCamera-Prefix-bkuhdxzhwaujxycvimqzpdurruyj_ast/ixCamera-Prefix.pch.pth ixCamera/ixCamera-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Volumes/MAC2/gitHub/repo/ixCamera/DerivedData/ixCamera/Index/PrecompiledHeaders/ixCamera-Prefix-cpchezxnpagshnfguzjloqblyfhp_ast/ixCamera-Prefix.pch.pth ixCamera/ixCamera-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch.pth ixCamera/ixCamera-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167058.380995
+e387167059.012791
+r1
+xProcessPCH
+x/var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch.pth
+xixCamera/ixCamera-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile ixCamera/ixCamera-Prefix.pch7ba46152b313b741^276c0353b313b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/ixCamera-Prefix.pch0000000000000000^3350"ProcessPCH /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch.pth ixCamera/ixCamera-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7s -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 --serialize-diagnostics /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/ixCamera-Prefix.pch -o /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-chxvbiavfaefeucsdvthmtwqqfaw/ixCamera-Prefix.pch.d36"5F63E491-3AFE-4A0E-8DB5-BEAD052B3E51-
+
+CProcessPCH /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch.pth ixCamera/ixCamera-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s387167058.380258
+e387167058.930281
+r1
+xProcessPCH
+x/var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch.pth
+xixCamera/ixCamera-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile ixCamera/ixCamera-Prefix.pch427b6152b313b741^f227ee52b313b741^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/ixCamera-Prefix.pch0000000000000000^3347"ProcessPCH /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch.pth ixCamera/ixCamera-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.1 -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-generated-files.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-own-target-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-all-target-headers.hmap -iquote /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera-project-headers.hmap -I/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources/armv7 -I/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/DerivedSources -F/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos -DNS_BLOCK_ASSERTIONS=1 --serialize-diagnostics /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch.dia -c /Volumes/MAC2/gitHub/repo/ixCamera/ixCamera/ixCamera-Prefix.pch -o /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/_d/sr0qp8_n17b81vbvz2d8x9sm0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ixCamera-Prefix-hlekzbmsrjoqylhkogybzvhtunjc/ixCamera-Prefix.pch.d36"7A9ED38E-4643-4352-AE59-78E61E26D0D1-
+
+CProcessProductPackaging "/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision" /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/embedded.mobileprovision
+s387167063.511156
+e387167063.514409
+r1
+xProcessProductPackaging
+x/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection193"ProcessProductPackaging "/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision" build/Release-iphoneos/ixCamera.app/embedded.mobileprovisionb6f28257b313b741^34be8357b313b741^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/embedded.mobileprovision0000000000000000^668"ProcessProductPackaging "/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision" build/Release-iphoneos/ixCamera.app/embedded.mobileprovision    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/ken/Library/MobileDevice/Provisioning Profiles/8DF0B3A2-5773-48DD-8E4B-2B2C639B2D51.mobileprovision" -o /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/embedded.mobileprovision36"83A11DF8-A659-4378-BB50-9E38BDD40D84-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent
+s387167063.539428
+e387167063.542925
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection212"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent44348a57b313b741^700a8b57b313b741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent000000000080d041^732"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o /Volumes/MAC2/gitHub/repo/ixCamera/build/ixCamera.build/Release-iphoneos/ixCamera.build/ixCamera.xcent36"4DDC3DFE-3824-457B-BCB6-95610524799E-
+
+CTouch /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+s387167063.522432
+e387167063.531506
+r1
+xTouch
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Touch /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app46d38557b313b741^f9108857b313b741^---0#0#0#--365"Touch build/Release-iphoneos/ixCamera.app    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app36"058A6D27-FCC4-4721-B93F-A8D61DA23D56-
+
+CValidate /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+s387167064.194485
+e387167065.483649
+r1
+xValidate
+x/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app
+owarning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)
+oUnable to validate your application. - (null)
+o
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Validate build/Release-iphoneos/ixCamera.app7ae23158b313b741^00e17b59b313b741^-255"warning: iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)Unable to validate your application. - (null)1(21%IDEActivityLogMessage2@202" iPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57 (-19013)192"IPhone/iPod Touch: Info.plist: Unable to verify icon dimensions, no icon found.  You must define CFBundleIcons, CFBundleIconFiles, CFBundleIconFile, or provide a default Icon.png that is 57x57387167065#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#16"Validate Warning--0#0#0#-19%DVTDocumentLocation4@87"file://localhost/Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app/0000000000000000^509"Validate build/Release-iphoneos/ixCamera.app    cd /Volumes/MAC2/gitHub/repo/ixCamera    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Volumes/MAC2/gitHub/repo/ixCamera/build/Release-iphoneos/ixCamera.app36"7940C7A1-AA3A-46CE-AFCC-F29A7D2123E4-
+

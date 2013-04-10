@@ -7,13 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "KNCVImageRender.h"
+#import "KNGLView.h"
 
 @class KNVideoCapture;
 @interface KNViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIView* viewCapturePreview;
+@property (strong, nonatomic) IBOutlet UIView* render;
+@property (strong, nonatomic) IBOutlet UIImageView* imgView;
+@property (strong, nonatomic) IBOutlet KNGLView* glView;
 @property (strong, nonatomic) KNVideoCapture* capture;
 
-- (IBAction)testShot:(id)sender;
-- (IBAction)position:(id)sender;
+@property (retain, nonatomic) NSOperationQueue* renderQueue;
+
+- (IBAction)start:(id)sender;
+- (IBAction)stop:(id)sender;
 @end

@@ -45,7 +45,7 @@ static KNFileManager* gInstance = nil;
     if ([fm fileExistsAtPath:filepath]) {
         NSError* error;
         del = [fm removeItemAtPath:filepath error:&error];
-        if (error) {
+        if (!del && error) {
             NSLog(@"%s %@", __func__, [error localizedDescription]);
         }
     }

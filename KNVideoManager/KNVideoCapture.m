@@ -53,11 +53,16 @@ const NSInteger DEFAULT_FRAMERATE = 30;
 @synthesize captureSize         = _captureSize;
 @synthesize cameraPosition      = _cameraPosition;
 
+- (void)dealloc{
+    [_previewLayer release];
+    [_viewPreview release];
+    [_session release];
+    [super dealloc];
+}
+
 - (id)init {
     self = [super init];
     if (self) {
-        
-        
     }
     return self;
 }
@@ -169,8 +174,8 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     AVCaptureDeviceInput* input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
     if (!input) {
         NSLog(@"%s %@", __func__, [error localizedDescription]);
+        return  [session autorelease];
         session = nil;
-        return  session;
     }
     if ([session canAddInput:input])
         [session addInput:input];
@@ -180,13 +185,19 @@ const NSInteger DEFAULT_FRAMERATE = 30;
     
     AVCaptureConnection* connection = [output connectionWithMediaType:AVMediaTypeVideo];
     [self changeFrameRate:connection];
-    NSDictionary* videoSettings = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA]
+//    NSDictionary* videoSettings = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA]
+//                                                              forKey:(id)kCVPixelBufferPixelFormatTypeKey];
+    
+    NSDictionary* videoSettings = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:kCVPixelFormatType_420YpCbCr8BiPlanarFullRange]
                                                               forKey:(id)kCVPixelBufferPixelFormatTypeKey];
+
+    
     [output setVideoSettings:videoSettings];
+    
+    
     dispatch_queue_t queue = dispatch_queue_create("captureQueue", NULL);
     [output setSampleBufferDelegate:self queue:queue];
     [session addOutput:output];
-    
 
     if (_viewPreview) {
         AVCaptureVideoPreviewLayer* previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:session];
@@ -194,9 +205,10 @@ const NSInteger DEFAULT_FRAMERATE = 30;
         previewLayer.videoGravity = AVLayerVideoGravityResize;
         [_viewPreview.layer addSublayer:previewLayer];
         
-        self.previewLayer = previewLayer;        
+        self.previewLayer = previewLayer;
+        [previewLayer release];
     }
-    return  session;
+    return  [session autorelease];
 }
 
 #pragma mark - Public
@@ -436,7 +448,6 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
        fromConnection:(AVCaptureConnection *)connection {
         
     if (captureCompletion) {
-        
         ///Output UIImage.
         if (_ouputType == kKNCaptureOutputImage) {
         
@@ -454,14 +465,20 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
             
             CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
             
+//            size_t len = CVPixelBufferGetDataSize(imageBuffer);
+//            
 //            size_t width = CVPixelBufferGetWidth(imageBuffer);
 //            size_t height = CVPixelBufferGetHeight(imageBuffer);
             
-            captureCompletion((__bridge id)(imageBuffer));
+            captureCompletion((id)(imageBuffer));
         }
     }
     [self changeFrameRate:connection];
 }
 
-
+- (void)captureOutput:(AVCaptureFileOutput *)captureOutput didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL
+      fromConnections:(NSArray *)connections error:(NSError *)error
+{
+    NSLog(@"Recording to file ended");
+}
 @end
